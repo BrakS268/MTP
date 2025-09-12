@@ -1,0 +1,3 @@
+[submodule "laboratory"]
+	path = laboratory
+	url = https://github.com/BrakS268/laboratory
