@@ -2,6 +2,10 @@ print("Hello Git")
 
 print("Файл изменился")
 
+print("Изменение в Main")
+
 print("Изменение в Feature")
 
-print("Изменение для Pull Request")
+print("Flake8 check")
+
+print("Проверка")
