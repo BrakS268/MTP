@@ -1,8 +1,8 @@
 values = [99, 150, 41, 2022, 104, 23, 134, 221]
-minValue = 99999999999
+minValue = values[0]
 
-for i in range(len(values)):
-    if values[i] < minValue:
-        minValue = values[i]
+for value in values:
+    if value < minValue:
+        minValue = value
 
 print(minValue)
