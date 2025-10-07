@@ -1,1 +1,0 @@
-print("Ветка Feature")
