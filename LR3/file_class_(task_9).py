@@ -28,7 +28,6 @@ class FileManager:
 
 
 if __name__ == "__main__":
-    print("=== ЗАДАНИЕ 1: КЛАСС ДЛЯ РАБОТЫ С ФАЙЛАМИ ===\n")
 
     file_manager = FileManager("example.txt")
 
