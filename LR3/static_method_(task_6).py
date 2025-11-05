@@ -33,5 +33,6 @@ if __name__ == "__main__":
     print("\nПроверка простых чисел:")
     numbers = [2, 3, 4, 5, 17, 25, 29]
     for num in numbers:
-        prime_status = "простое" if MathOperations.is_prime(num) else "составное"
+        prime_status = "простое" if MathOperations.is_prime(num) \
+            else "составное"
         print(f"Число {num} - {prime_status}")
