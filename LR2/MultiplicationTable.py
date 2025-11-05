@@ -5,4 +5,4 @@ def MulitiplicationTable(n, m):
         print()
 
 
-MulitiplicationTable(1, 10)
+MulitiplicationTable(1, 35)
