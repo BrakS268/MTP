@@ -24,7 +24,7 @@ class Bike(Vehicle):
         return "Кручу педали на велосипеде"
 
     def get_info(self):
-        return "Велосипед - 2 колеса, мускульная сила"
+        return "Велосипед - 2 колеса, мышцы"
 
 
 class Motorcycle(Vehicle):
@@ -53,10 +53,10 @@ class VehicleFactory:
             "truck": Truck
         }
 
-        if vehicle_type.lower() in vehicle_types:
-            return vehicle_types[vehicle_type.lower()]()
+        if vehicle_type in vehicle_types:
+            return vehicle_types[vehicle_type]()
         else:
-            raise ValueError(f"Неизвестный тип транспортного средства: {vehicle_type}")
+            raise ValueError(f"Неизвестный тип: {vehicle_type}")
 
 
 if __name__ == "__main__":
@@ -67,8 +67,8 @@ if __name__ == "__main__":
         try:
             vehicle = VehicleFactory.create_vehicle(vehicle_type)
             print(f"{vehicle_type.upper()}:")
-            print(f"  - {vehicle.drive()}")
-            print(f"  - {vehicle.get_info()}\n")
+            print(f"  {vehicle.drive()}")
+            print(f"  {vehicle.get_info()}\n")
         except ValueError as e:
             print(f"Ошибка: {e}\n")
 

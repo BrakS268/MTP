@@ -23,6 +23,7 @@ class MathOperations:
         return True
 
 
+
 if __name__ == "__main__":
 
     print("Базовые операции:")

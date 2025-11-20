@@ -46,3 +46,4 @@ if __name__ == "__main__":
         pass
     except TypeError as e:
         print(f"\nОшибка при создании абстрактного класса: {e}")
+
