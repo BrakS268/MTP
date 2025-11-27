@@ -3,7 +3,6 @@ from tkinter import ttk
 import time
 
 
-
 def progressbar():
     root = tk.Tk()
     root.title("Прогрессбар")
@@ -11,7 +10,12 @@ def progressbar():
 
     progress_var = tk.IntVar(value=0)
 
-    progress = ttk.Progressbar(root, variable=progress_var, maximum=100, length=250)
+    progress = ttk.Progressbar(
+        root,
+        variable=progress_var,
+        maximum=100,
+        length=250
+    )
     progress.pack(pady=20)
 
     label = tk.Label(root, text="0%")
@@ -24,7 +28,11 @@ def progressbar():
             root.update()
             time.sleep(0.03)
 
-    start_btn = tk.Button(root, text="Начать загрузку", command=simulate_loading)
+    start_btn = tk.Button(
+        root,
+        text="Начать загрузку",
+        command=simulate_loading
+    )
     start_btn.pack(pady=10)
 
     root.mainloop()
